@@ -75,5 +75,30 @@
       More Info : https://portswigger.net/burp/pro
       
 # 5. chrome extensions
+     
+     
+     
+     
+     
+     
+# 6. PROXY SETUP
 
+     A)  OPEN - BURPSUITE & FIREFOX
+     B)   ON BURP - GO TO PROXY TAB 
+                             THEN OPTIONS TAB 
+                                       LOOK IN PROXY LISTNERS TAB - by default burp listens to  127.0.0.1 : 8080
+                                                                  - 127.0.0.1 => IP && 8080 => PORT
+     C)   by default - FIRE FOX USES PORTS - 80 & 443 (standard)
+                     - TO CHANGE THIS AND USE THE BURP SUITE ip AND port
+                              - GO TO FIRE FOX - CLICK ON THE THREE LINES ON RIGHT 
+                                               - GO TO PREFERENCES
+                                               - GENERAL SETTINGS - GO TO BOTTOM - LOOK FOR NETWORK SETTINGS 
+                                                                                 - CLICK ON SETTINGS 
+                                                                                 - THEN MANUAL PROXY CONFIG - THE USE THE BURP SUITE IP AND PORT
+                                                                                 - USE THIS FOR ALL PROTOCOLS (CLICK IT)
+                                                                                 - SAVE AND CLOSE
+                                                                                 - REFRESH TYHE PAGE TO TEST
+                                                                                 - BUT IT THROWS AN ERROR
+    D)  NOW OPEN BURP SUITE - PROXY - INTERCEPT - IN INTERCEPT TAB NOTICE THAT intercept is on by default
+                                                - TURN IT OF TO DIRECTLY SEND THE PACKETS TO FIREFOX 
     
